@@ -12,4 +12,4 @@ RUN mkdir /libpostal-data \
     && make install \
     && cd ..
 
-# RUN npm install openvenues/node-postal
+ENTRYPOINT [ "/libpostal/src/address_parser" ]
